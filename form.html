@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title>Form Example</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<!-- jQuery -->
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<!-- Our CSS and JS -->
+	<link rel="stylesheet" type="text/css" href="css/form-style.css">
+	<script src="js/form-script.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<h2 class="heading">Send a message!</h2>
+		<br>
+
+		<div>
+  			<form id="form" class="form-inline" role="form" align="center" method="POST" action="http://codeandcookies.herokuapp.com/submit">
+  				<div class="form-group">
+	      			<input type="text" name="name" class="form-control" id="name" placeholder="Your name">
+	      			<br>
+	      			<input type="text" name="message" class="form-control" id="message" placeholder="Your message">
+	      			<br>
+	      			<input type="password" name="secret" class="form-control" id="secret1" placeholder="Secret password">
+	      			<br>
+		      		<input type="password" name="secret2" class="form-control" id="secret2" placeholder="Repeat secret">
+		      		<br>
+		    	</div><br>
+		    	<button id="submit" type="submit" class="btn btn-default">Send!</button>
+  			</form>
+		</div>
+	</div>
+</body>
+</html>
